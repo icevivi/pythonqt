@@ -94,6 +94,7 @@ void PythonQt::init(int flags, const QByteArray& pythonQtModuleName)
     qRegisterMetaType<QList<QObject*> >("QList<void*>");
     qRegisterMetaType<QObjectList>("QObjectList");
     qRegisterMetaType<QList<QObject*> >("QList<QObject*>");
+	qRegisterMetaType<WId >("WId");
     if (QT_POINTER_SIZE == 8) {
       qRegisterMetaType<quint64>("size_t");
     } else {
